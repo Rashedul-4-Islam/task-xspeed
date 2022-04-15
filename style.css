@@ -83,7 +83,7 @@
         rgba(254, 87, 9, 0.801),
         rgba(246, 34, 37, 0.863)
       ),
-      url(./Assets/header/top_img.png);
+      url(./Images/header/top_img.png);
     height: 90vh;
     background-size: cover;
     background-repeat: no-repeat;

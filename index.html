@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evenex</title>
+    <!-- google font starts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google font ends  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <!-- font awesome kit  -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <navbar class="container navbar">
+        <div class="">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="182"
+            height="44"
+            viewBox="0 0 182 44"
+          >
+            <image
+              id="logo"
+              width="182"
+              height="44"
+              xlink:href="data:img/png;base64,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"
+            />
+          </svg>
+        </div>
+        <input type="checkbox" name="" id="check">
+        <label for="check">
+         <i  class="material-icons checkbtn">
+           menu_open
+         </i>
+        </label>
+     
+        <ul class="navbar-content">
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Speaker</a></li>
+          <li><a href="#">Schedule</a></li>
+          <li><a href="#">News</a></li>
+          <i class="material-icons">search</i>
+         
+          <li>
+            <button class="navbar-btn"> <i class="material-icons">chair</i> Book Tickets</button>
+          </li>
+          <i class="material-icons grid-icon">apps</i>
+        </ul>      
+
+      </navbar>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="hero-text container">
+          <div class="hero-text-wrapper">
+            <p># Technical Conference</p>
+            <h1 class="hero-title">
+              Where the <br />
+              tech worlds meets
+            </h1>
+            <div>
+              <li>25-27 December 2019</li>
+              <li>Ghotam Hail, Bardway</li>
+            </div>
+            <div class="hero-carts">
+              <button> <i class="material-icons">chair</i> Purchase Tickets</button>
+              <p> <i class="material-icons">add_circle</i> Add to Calender</p>
+            </div>
+          </div>
+          <img
+            class="event-img"
+            src="./Images/header/elements/event.png"
+            alt=""
+          />
+          <img
+            class="speaker-img"
+            src="./Images/header/speaker_event.png"
+            alt=""
+          />
+          <img
+            class="shape-img-2"
+            src="./Images/header/elements/Shape -2.png"
+            alt=""
+          />
+          <img
+            class="shape-img-3"
+            src="./Images/header/elements/Shape -3.png"
+            alt=""
+          />
+          <img
+            class="shape-img-4"
+            src="./Images/header/elements/Shape -4.png"
+            alt=""
+          />
+          <img
+            class="shape-img-5"
+            src="./Images/header/elements/Shape -5.png"
+            alt=""
+          />
+          <img
+          class="shape-img-6"
+          src="./Images/header/elements/Shape -2.png"
+          alt=""
+        />
+        </div>
+      </section>
+
+      <section class="fun-facts">
+        <div>
+          <img
+            class="fun-img-left"
+            src="./Images/fun_facts/left_image.png"
+            alt=""
+          />
+          <img
+            class="fun-img-right"
+            src="./Images/fun_facts/right_image.png"
+            alt=""
+          />
+        </div>
+        <div class="fun-texts container">
+          <div class="first-texts">
+            <p style="color: #f94743"># Overview</p>
+            <h2>Get the latest info about Evenex</h2>
+          </div>
+          <div class="second-texts">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
+              quibusdam suscipit animi non doloremque, minima iure. Porro modi
+              quaerat non?
+            </p>
+          </div>
+          <div class="second-texts">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
+              quibusdam suscipit animi non doloremque, minima iure. Porro modi
+              quaerat non?
+            </p>
+          </div>
+        </div>
+
+        <div class="details-card">
+          <div class="details-card-item">
+            <h3>250+</h3>
+            <p>Journalists</p>
+          </div>
+          <div class="details-card-item">
+            <h3>37+</h3>
+            <p>Speakers</p>
+          </div>
+          <div class="details-card-item">
+            <h3>4300+</h3>
+            <p>Attendees</p>
+          </div>
+          <div class="details-card-item">
+            <h3>109+</h3>
+            <p>CEOs</p>
+          </div>
+          <img
+            class="details-card-item img-opacity"
+            src="./Images/fun_facts/shape.png"
+            alt=""
+          />
+        </div>
+      </section>
+       
+      <section class="gallery-section">
+            <div class="gallery">
+                <div class="first-box">
+                  <p># Photo gallery</p>
+                   <h2>It was an amazing Crowd</h2> 
+                </div>
+                <div>
+                   <img src="./Images/Gallary//01.jpg" alt="">
+                </div>
+                <div>
+                   <img src="./Images/Gallary//02.jpg" alt="">
+                </div>
+                <div>
+                   <img src="./Images/Gallary//03.jpg" alt="">
+                </div>
+                <div>
+                   <img src="./Images/Gallary//04.jpg" alt="">
+                </div>
+                <div>
+                   <img src="./Images/Gallary//05.jpg" alt="">
+                </div>
+                <div>
+                   <img src="./Images/Gallary//06.jpg" alt="">
+
+                </div>
+                <div class="last-box">
+                   <div>
+                    <p> <span><i class="fa-brands fa-instagram"></i></span> instagram</p>
+                    <h3>@Evenex-meet</h3>
+                   </div> 
+               </div>
+            </div>
+      </section>
+
+      <section class="counters">
+        <div>
+          <img
+            class="counters-img-left"
+            src="./Images/fun_facts/left_image.png"
+            alt=""
+          />
+          <img
+            class="counters-img-right"
+            src="./Images/fun_facts/right_image.png"
+            alt=""
+          />
+        </div>
+        <div class="counters-content container">
+          <div>
+            <img class="counters-image"
+             
+              src="./Images/counters/front_img.png"
+              alt=""
+            />
+          </div>
+          <div class="next-speaker">
+            <h2>NEVER MISS ANOTHER SPEAKER ANNOUNCMENT</h2>
+            <div class="counters-time">
+              <div class="counters-time-item">
+                <h3>59</h3>
+                <p>DAYS</p>
+              </div>
+              <div style="text-align:center" class="counters-time-item colon-color">:</div>
+              <div class="counters-time-item">
+                <h3>23</h3>
+                <p>Hours</p>
+              </div>
+              <div  style="text-align:center" class="counters-time-item colon-color">:</div>
+              <div class="counters-time-item">
+                <h3>59</h3>
+                <p>MINUTES</p>
+              </div>
+              <div  style="text-align:center" class="counters-time-item colon-color">:</div>
+              <div class="counters-time-item">
+                <h3>59</h3>
+                <p>SECONDS</p>
+              </div>
+            </div>
+        <button class="navbar-btn"> <i class="material-icons">chair</i> Purchese Tickets</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

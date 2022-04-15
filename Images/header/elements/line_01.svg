@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1" height="800" viewBox="0 0 1 800">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        opacity: 0.2;
+      }
+    </style>
+  </defs>
+  <rect id="_01" data-name="01" class="cls-1" width="1" height="800"/>
+</svg>
